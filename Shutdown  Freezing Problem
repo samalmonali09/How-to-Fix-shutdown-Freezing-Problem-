@@ -1,0 +1,10 @@
+How to fix shutdown  frezzing  problem in your ubantu system 
+
+How to fix it :-
+
+step1:- open terminal (CTRL+ALT+T)
+step2:- type sudo gedit /etc/default/grub/
+step3:-  just change GRUB_CMDLINE_LINUX_DEFAULT="quiet splash" into GRUB_CMDLINE_LINUX_DEFAULT="quiet splash acpi=force"
+step4:- Save It 
+step5:- sudo update-grub
+step6:- Boot system / Restart System
